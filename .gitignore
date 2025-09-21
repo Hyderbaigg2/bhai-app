@@ -1,1 +1,42 @@
-service-account-key.json
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# Flutter/Dart/Pub
+.dart_tool/
+.packages
+.pub-cache/
+build/
+
+# Android
+/android/app/src/main/assets/flutter_assets/
+/android/app/build
+/android/build/
+/android/.gradle/
+/android/key.properties
+/android/local.properties
+
+# iOS
+/ios/Flutter/App.framework
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/Runner/GeneratedPluginRegistrant.h
+/ios/Runner/GeneratedPluginRegistrant.m
+/ios/Runner.xcworkspace/contents.xcworkspacedata
+/ios/Runner.xcworkspace/xcshareddata/
+/ios/Runner.xcodeproj/project.xcworkspace/
+/ios/Runner.xcodeproj/xcuserdata/
+/ios/.symlinks/
+/ios/Pods/
+/ios/Podfile.lock
+
+# Web
+/web/build/

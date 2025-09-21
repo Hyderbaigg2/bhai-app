@@ -2,7 +2,7 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-on:
+'on':
   push:
     branches:
       - main
@@ -11,18 +11,34 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # Set up Node.js for Firebase Functions
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Install dependencies for Firebase Functions
+      - name: Install Function Dependencies
+        run: npm install --prefix functions
+
+      # Set up Flutter
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.x'
-      - name: Install dependencies
-        run: flutter pub get
-      - name: Build Flutter web app
-        run: flutter build web
+          flutter-version: '3.19.5'
+          channel: 'stable'
+
+      # Build Flutter Web App
+      - name: Build Flutter Web
+        run: flutter build web --release
+
+      # Deploy to Firebase
       - name: Deploy to Firebase
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BHAI_APP_HYDERBAIGG2 }}
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BHAI_APP_HYDERBAIGG2 }}'
           channelId: live
           projectId: bhai-app-hyderbaigg2
+          target: bhai-app # Ensure this matches your project alias or name if you have one
