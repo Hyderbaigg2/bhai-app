@@ -33,4 +33,4 @@ jobs:
         run: npm --prefix functions install
         
       - name: Deploy to Firebase
-        run: firebase deploy --only hosting:bhai-app,functions --project=bhai-app-hyderbaigg2 --non-interactive
+        run: firebase deploy --only hosting:bhai-app,functions --project=bhai-app-hyderbaigg2 --non-interactive --force
