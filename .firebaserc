@@ -1,5 +1,14 @@
 {
-  "projects": {},
-  "targets": {},
-  "etags": {}
+  "projects": {
+    "default": "bhai-app-hyderbaigg2"
+  },
+  "targets": {
+    "bhai-app-hyderbaigg2": {
+      "hosting": {
+        "bhai-app": [
+          "bhai-app-hyderbaigg2"
+        ]
+      }
+    }
+  }
 }
