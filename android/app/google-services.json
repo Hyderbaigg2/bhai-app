@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "660707924193",
+    "project_id": "bhai-app-hyderbaigg2",
+    "storage_bucket": "bhai-app-hyderbaigg2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660707924193:android:fe64c3980b2714b306ffa0",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660707924193-h8ji11muhhqpqju4rijql0glmmklm03l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapp",
+            "certificate_hash": "ec3a258598cd81dbc192fd798792da8a59f2cd3a"
+          }
+        },
+        {
+          "client_id": "660707924193-msn14q8rd1pht84os4qodeqa66jj6qv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk-Ak-NzYAfPyQfV0ycKIUQx7CB7SWkUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660707924193-msn14q8rd1pht84os4qodeqa66jj6qv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

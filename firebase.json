@@ -1,0 +1,28 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "bhai-app-hyderbaigg2",
+          "appId": "1:660707924193:android:fe64c3980b2714b306ffa0",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "bhai-app-hyderbaigg2",
+          "configurations": {
+            "android": "1:660707924193:android:fe64c3980b2714b306ffa0",
+            "web": "1:660707924193:web:8d75702753f5ca5c06ffa0"
+          }
+        }
+      }
+    }
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "nam5",
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}
